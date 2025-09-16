@@ -1,4 +1,4 @@
--- Truncar dados existentes antes de alterar o tipo da coluna
+-- Truncar dados existentes antes de alterar o tipo da colunas
 UPDATE "agents" SET "title" = LEFT("title", 255) WHERE LENGTH("title") > 255;
 UPDATE "agents" SET "description" = LEFT("description", 1000) WHERE LENGTH("description") > 1000;
 
