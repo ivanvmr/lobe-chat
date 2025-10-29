@@ -6,7 +6,7 @@ import { createCallerFactory } from '@/libs/trpc/lambda';
 import { lambdaRouter } from '@/server/routers/lambda';
 
 export const runtime = 'nodejs';
-export const maxDuration = 10;
+export const maxDuration = 60;
 
 const serverDBEnv = getServerDBConfig();
 
